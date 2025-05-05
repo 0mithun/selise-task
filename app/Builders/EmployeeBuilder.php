@@ -22,10 +22,12 @@ class EmployeeBuilder extends Builder
 
     public function overviewSearch(): self
     {
-        return $this->where(function ($q) {
-            $search = request('search');
+        return $this->when(request('search'), function($q) {
+            $q->where(function ($q) {
+                $search = request('search');
 
-            $q->orWhere('employee.name', 'LIKE', "%$search%");
+                $q->orWhere('employee.name', 'LIKE', "%$search%");
+            });
         });
     }
 
