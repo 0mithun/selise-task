@@ -22,5 +22,5 @@ yarn-error.log
 composer.lock
 
 # Scribe
-public/docs/
+# public/docs/
 .scribe/*
