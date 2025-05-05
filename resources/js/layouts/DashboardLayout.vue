@@ -14,7 +14,6 @@
 import { inject, onMounted, ref } from 'vue'
 
 import { storeToRefs } from 'pinia'
-import { notificationShowStore } from '@/store/notification'
 import { watch } from '@vue/runtime-core'
 
 import Sidebar from './components/Sidebar.vue'

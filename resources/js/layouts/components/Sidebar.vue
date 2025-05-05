@@ -18,7 +18,7 @@
             :isFullView="sidebarFullView"
           >
             <template #icon>
-              <SessionIcon />
+              <Employee />
             </template>
             {{ "Employee" }}
           </SidebarLink>
@@ -31,7 +31,7 @@
 
 <script setup>
 import SidebarLink from "./SidebarLink.vue";
-import SessionIcon from "./Icons/SessionIcon.vue";
+import Employee from "./Icons/EmployeeIcon.vue";
 
 import { onBeforeMount, reactive, ref, computed } from "vue";
 import { useRoute } from "vue-router";

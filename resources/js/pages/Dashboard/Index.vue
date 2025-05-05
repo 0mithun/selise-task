@@ -1,6 +1,8 @@
 <template>
     <div class="content">
-      Dashboard
+        <div class="flex items-center p-10">
+            Dashboard
+        </div>
     </div>
   </template>
 

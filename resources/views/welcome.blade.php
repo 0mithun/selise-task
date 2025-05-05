@@ -19,7 +19,6 @@
 
         <style>
         </style>
-        @vite('resources/css/flags.css')
         @vite('resources/css/app.css')
         @routes
     </head>

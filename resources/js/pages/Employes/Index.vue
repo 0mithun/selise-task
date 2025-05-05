@@ -9,7 +9,7 @@
       bodyClass=""
       headerClass=""
       headerTopClass="!py-0 !border-t-0"
-      placeholder="Search by session name"
+      placeholder="Search by employee name"
     >
       <template #filter>
         <Filter filterClass="w-[90%]">
@@ -53,7 +53,7 @@
         <SortTableColumn
           label="Address"
           columnName="address"
-          style="width: 10%"
+          style="width: 15%"
         />
         <SortTableColumn
           label="Salary"
@@ -66,7 +66,7 @@
           style="width: 10%"
           :enable="true"
         />
-        <div style="width: 10%"></div>
+        <div style="width: 5%"></div>
       </template>
       <template #body>
         <TableRow v-for="row in overviewData" :key="row.id" :employee="row" />
