@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('employee', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->unsignedBigInteger('department_id');
-            $table->string('name');
+            $table->string('name')->index();
             $table->string('email');
             $table->softDeletes();
 

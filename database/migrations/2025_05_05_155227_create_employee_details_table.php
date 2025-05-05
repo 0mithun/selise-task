@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('designation');
             $table->float('salary');
             $table->string('address');
-            $table->date('joined_date');
+            $table->date('joined_date')->index();
 
             $table->timestamps();
         });
