@@ -14,7 +14,9 @@ class EmployeeSeeder extends Seeder
     public function run(): void
     {
         for($i=0; $i<100; $i++) {
-            Employee::factory()->count(1000)->create();
+            Employee::factory()->count(1000)->create([
+                'department_id' =>  mt_rand(1, 10)
+            ]);
         }
     }
 }

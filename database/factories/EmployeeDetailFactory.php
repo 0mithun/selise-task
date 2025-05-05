@@ -18,9 +18,9 @@ class EmployeeDetailFactory extends Factory
     public function definition(): array
     {
         return [
-            'employee_id'           =>  fn()=> Employee::inRandomOrder()->first()->id,
+            // 'employee_id'           =>  fn()=> Employee::inRandomOrder()->first()->id,
             'designation'           =>  $this->faker->colorName(),
-            'salary'            =>  mt_rand(1000, 1000000),
+            'salary'            =>  $this->faker->numberBetween(100, 100000),
             'address'           =>  $this->faker->address(),
             'joined_date'           =>  $this->faker->date(),
         ];
