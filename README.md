@@ -7,10 +7,10 @@
 ## Installation Instructions
 
 - Run `docker compose run php composer install`
-- Run `docker compose run php php artisan migrate:fresh --seed`
 - Run `cp .env.example .env`
 - Set DB_HOST=db in .env
 - Run `docker compose run php php artisan key:generate`
+- Run `docker compose run php php artisan migrate:fresh --seed`
 - Run `docker compose run node npm install`
 - Run `docker compose up -d`
 
